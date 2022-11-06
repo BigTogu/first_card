@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .total {
+      margin: 54px auto;
+      width: 350px;
+      height: 450px;
+      background: AntiqueWhite;
+      display: flex;
+      flex-direction: column;
+      border-radius: 12px;
+      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    .principal {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 36px;
+      margin-top: 24px;
+      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      margin: 24px auto;
+
+    }
+
+    .total_container {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .container {
+      width: 350px;
+      height: 254px;
+      background: rgb(175, 153, 123);
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+    }
+
+    .personal_information {
+      display: flex;
+      flex-direction: column;
+      margin: 24px;
+    }
+
+    .name {
+      margin-top: 0;
+      margin-bottom: 0px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .personal_information p {
+      margin: 0;
+      color: white;
+      font-weight: 500;
+    }
+
+    .description_tick {
+      display: flex;
+      gap: 14px;
+      align-content: center;
+      align-items: center;
+    }
+
+    .description_tick img {
+      width: 14px;
+      height: 14px;
+      background: AntiqueWhite;
+      padding: 6px;
+      border-radius: 50%;
+      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.08);
+    }
+
+
+
+    .middle_part div p {
+      margin: 0;
+      text-align: center;
+    }
+
+    .middle_part div p:nth-child(2) {
+      margin-top: 4px;
+      font-weight: bold;
+    }
+
+
+    .middle_part {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      color: white;
+    }
+
+
+    .more_info {
+      width: 350px;
+      height: 200px;
+      color: black;
+      background: rgb(233, 218, 197);
+      border-radius: 12px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      margin-top: 24px;
+    }
+
+    .arrow {
+      width: 14px;
+      height: 14px;
+      background: rgb(230, 219, 202);
+      padding: 8px;
+      border-radius: 50%;
+      margin-right: 24px;
+      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.08);
+    }
+
+    .second_group {
+      display: flex;
+      flex-direction: column;
+      margin: 24px;
+    }
+
+    .second_group p {
+      margin: 0;
+      padding: 0;
+    }
+
+    .icons {
+      display: flex;
+      gap: 26px;
+      margin: 14px 0 0 0;
+    }
+
+    .icons img {
+      width: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="total">
+    <figure class="principal">
+      <img class="total_container"
+        src="https://images.unsplash.com/photo-1628890923662-2cb23c2e0cfe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+        alt="total_container">
+    </figure>
+
+    <div class="container">
+
+      <div class="personal_information">
+        <h1 class="name">Andrea Karenina</h1>
+        <div class="description_tick">
+          <p class="description">Junior Frontend</p>
+          <img src="./imagenes_perfil/tick.svg" alt="tick">
+        </div>
+      </div>
+
+
+      <div class="middle_part">
+        <div>
+          <p>Age</p>
+          <p>35</p>
+        </div>
+        <div>
+          <p>Study hours</p>
+          <p>152</p>
+        </div>
+        <div>
+          <p>Visits</p>
+          <p>32</p>
+        </div>
+      </div>
+
+
+      <div class="more_info">
+        <div class="second_group">
+          <p class="title">Complete Profile</p>
+          <figure class="icons">
+            <img src="./imagenes_perfil/facebook.svg" alt="facebook">
+            <img src="./imagenes_perfil/instagram.svg" alt="instagram">
+            <img src="./imagenes_perfil/linkedin.svg" alt="linkedin">
+          </figure>
+        </div>
+        <img class="arrow" src="./imagenes_perfil/flecha.svg" alt="arrow">
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
